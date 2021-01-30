@@ -25,12 +25,13 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
+                  </a>
                   <div  class="my-2 my-md-0 me-md-3">
-      <a class="p-2 text-dark" href="{{url('/')}}">Home</a>
-      <a class="p-2 text-dark" href="{{url('/about')}}">About</a>
-      <a class="p-2 text-dark" href="{{url('/')}}">Documentation</a>
-      <a class="p-2 text-dark" href="{{url('/')}}">Contact</a> </div>
-                </a>
+                      <a class="p-2 text-dark" href="{{url('/')}}">Home</a>
+                      <a class="p-2 text-dark" href="{{url('/about')}}">About</a>
+                      <a class="p-2 text-dark" href="{{url('/')}}">Documentation</a>
+                      <a class="p-2 text-dark" href="{{url('/')}}">Contact</a> </div>
+                                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
