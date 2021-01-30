@@ -6,5 +6,5 @@
       <a class="p-2 text-dark" href="{{url('/')}}">Documentation</a>
       <a class="p-2 text-dark" href="{{url('/')}}">Contact</a>
     </nav>
-    <a class="btn btn-outline-primary" href="{{url('/')}}">Sign up</a>
+   
 </header>

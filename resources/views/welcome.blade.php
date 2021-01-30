@@ -12,7 +12,7 @@
         <h4 class="my-0 fw-normal">SWOT Analysis</h4>
       </div>
       <div class="card-body">
-        Capture the  following  
+       
         <ul class="list-unstyled mt-3 mb-4">
           <li>Strengths</li>
           <li>Weaknesses</li>

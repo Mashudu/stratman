@@ -20,3 +20,7 @@ Route::get('/', function () {
 });
 Route::get('/about', [PagesController::class, 'about']);
 Route::resource('swots',SwotsController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
