@@ -17,7 +17,7 @@ class CreateSwotsTable extends Migration
             $table->id();
             $table ->mediumText('body');
             $table ->string('type');
-            $table ->string('status');
+            $table ->string('status')->default('NEW');
             $table->timestamps();
         });
     }
