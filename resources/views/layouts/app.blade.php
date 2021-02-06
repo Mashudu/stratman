@@ -18,9 +18,17 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<<<<<<< HEAD
     <link href="https://cdn.datatables.net/autofill/2.3.5/css/autoFill.bootstrap4.min.css" rel="stylesheet">
     
  
+=======
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+>>>>>>> 93a2cf749504ae9409e39cf97a98df1917353c43
 </head>
 <body>
     <div id="app">
@@ -29,13 +37,19 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Strat Manager') }}
                   </a>
-                  <div  class="my-2 my-md-0 me-md-3">
+               
                       <a class="p-2 text-dark" href="{{url('/')}}">Home</a>
+<<<<<<< HEAD
                       <a class="p-2 text-dark" href="{{url('/landings/organisation')}}">My Organisation</a>
                       <a class="p-2 text-dark" href="{{url('/landings/environment')}}">Environment Scan</a>
                       <a class="p-2 text-dark" href="{{url('/home')}}">Organisation Strategy</a>
                       <a class="p-2 text-dark" href="{{url('/landings/framework')}}">Framework</a>
                       <a class="p-2 text-dark" href="{{url('/landings/actionplan')}}">Action Plan</a> </div>
+=======
+                      <a class="p-2 text-dark" href="{{url('/about')}}">About</a>
+                      <a class="p-2 text-dark" href="{{url('/')}}">Documentation</a>
+                      <a class="p-2 text-dark" href="{{url('/')}}">Contact</a> 
+>>>>>>> 93a2cf749504ae9409e39cf97a98df1917353c43
                                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -87,9 +101,12 @@
         </nav>
 
         <main class="container">
+          <br>
+          @include('inc.messages')
             @yield('content')
         </main>
     </div>
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/autofill/2.3.5/js/dataTables.autoFill.min.js"></script>
@@ -99,5 +116,12 @@
         $('#swotIssues').DataTable();
     } );</script>
     
+=======
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+     
+
+
+>>>>>>> 93a2cf749504ae9409e39cf97a98df1917353c43
 </body>
 </html>
