@@ -5,7 +5,7 @@
 <br>
 <div class="p-4 p-md-5 mb-5 text-white rounded bg-dark">
   <div class="col-md-10 px-0">
-    <h2 class="display-5 font-italic">Weaknesses</h2>
+    <h2 class="display-5 font-italic">Threats</h2>
     <p class="lead my-4">Prepare two to three succinct paragraphs on how the your organisation will effectively communicate the various aspects of the strategic plan including vision, mission, core values, organisational goal, objectives, expected outcomes and strategies to key audiences and the messages and communications channels that will be used.</p>
     <a class="btn btn-primary btn-lg" href="register">Learn more</a>
   </div>
@@ -56,7 +56,7 @@
 <h2>Enter Issue</h2>
 <form>
   <div class="form-floating">
-    <textarea class="ckeditor form-control" id="txtWeaknesses" name = "txtWeaknesses" style="height: 100px"></textarea>
+    <textarea class="ckeditor form-control" id="txtThreats" name = "txtThreats" style="height: 100px"></textarea>
   </div>
   <br>
 

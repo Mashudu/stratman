@@ -18,19 +18,24 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://cdn.datatables.net/autofill/2.3.5/css/autoFill.bootstrap4.min.css" rel="stylesheet">
+    
+ 
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Strat Manager') }}
                   </a>
                   <div  class="my-2 my-md-0 me-md-3">
                       <a class="p-2 text-dark" href="{{url('/')}}">Home</a>
-                      <a class="p-2 text-dark" href="{{url('/about')}}">About</a>
-                      <a class="p-2 text-dark" href="{{url('/')}}">Documentation</a>
-                      <a class="p-2 text-dark" href="{{url('/')}}">Contact</a> </div>
+                      <a class="p-2 text-dark" href="{{url('/landings/organisation')}}">My Organisation</a>
+                      <a class="p-2 text-dark" href="{{url('/landings/environment')}}">Environment Scan</a>
+                      <a class="p-2 text-dark" href="{{url('/home')}}">Organisation Strategy</a>
+                      <a class="p-2 text-dark" href="{{url('/landings/framework')}}">Framework</a>
+                      <a class="p-2 text-dark" href="{{url('/landings/actionplan')}}">Action Plan</a> </div>
                                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -85,5 +90,14 @@
             @yield('content')
         </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/autofill/2.3.5/js/dataTables.autoFill.min.js"></script>
+   
+    <script type="text/javascript"> 
+    $(document).ready(function() {
+        $('#swotIssues').DataTable();
+    } );</script>
+    
 </body>
 </html>
