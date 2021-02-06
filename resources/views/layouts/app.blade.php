@@ -43,7 +43,6 @@
                       <a class="p-2 text-dark" href="{{url('/home')}}">Organisation Strategy</a>
                       <a class="p-2 text-dark" href="{{url('/landings/framework')}}">Framework</a>
                       <a class="p-2 text-dark" href="{{url('/landings/actionplan')}}">Action Plan</a> </div>
-
                       <a class="p-2 text-dark" href="{{url('/about')}}">About</a>
                       <a class="p-2 text-dark" href="{{url('/')}}">Documentation</a>
                       <a class="p-2 text-dark" href="{{url('/')}}">Contact</a> 
