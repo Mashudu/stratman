@@ -20,22 +20,479 @@
 
   <!-- Cloud End -->
   <!-- Table Start -->
-
-  <h2>View Issues</h2>
-  <table id = "swotIssues" class="table table-dark table-striped">
+  <button type="button" class="btn btn-primary btn-lg"> + Add New</button>
+  <hr>
+  <h3>View Issues</h3>
+  <table id = "example" class="table table-dark table-striped">
     <thead>
       <tr>
-        <th  class="text-center">Issue Number </th>
-        <th  class="text-center">Status</th>
-        <th  class="text-center">Issue Type</th>
-        <th  class="text-center">Desription</th>
-        <th  class="text-center">From</th>
-        <th  class="text-center" >Date</th>
-        <th class="text-center" >Action</th>
+        <th >Issue Number </th>
+        <th >Status</th>
+        <th >Issue Type</th>
+        <th >Desription</th>
+        <th >From</th>
+        <th >Date</th>
+        <th >Action</th>
      
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Test  description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Other description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Des description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Prepare two to three succinct paragraphs on how the your organisation </td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>There description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Strength</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>New</td>
+        <td >Weakness</td>
+        <td>Somwe description</td>
+        <td>Fortune</td>
+        <td>12/12/2020</td>
+        <td>
+          <button type="button" class="btn btn-success btn-sm">View</button>|
+          <button type="button" class="btn btn-warning btn-sm">Edit</button>|
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
       <tr>
         <th scope="row">1</th>
         <td>New</td>
@@ -88,21 +545,12 @@
           <button type="button" class="btn btn-danger btn-sm">Delete</button>
         </td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td><button type="button" class="btn btn-success btn-sm">View</button></td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td> <button id  ="btnModal" type="button" onclick="showMOdal()" data-bs-toggle="modal" data-bs-target="#myModal">Launch modal</button> </td>
-      </tr>
+     
+     
     </tbody>
   </table>
 
-  <button type="button" class="btn btn-primary btn-sm">Add New</button>
+
 
   <!-- Table End -->
 
