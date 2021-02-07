@@ -62,7 +62,8 @@ Route::get('/stakeholders/interests/create', [PagesController::class, 'interests
 Route::get('/stakeholders/potential/create', [PagesController::class, 'potentialCreate']);
 
 
-
+Route::post('/swotadd',[SwotsController::class,'store']);
+Route::put('/swotupdate/{id}',[SwotsController::class,'update']);
 
 
 

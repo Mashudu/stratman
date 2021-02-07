@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 class PagesController extends Controller
 {
     public  function about(){
@@ -85,12 +85,19 @@ class PagesController extends Controller
         return view('risks/createCompliance');
     }
     public  function swotsStrengths(){
-        $someData =  "It is a milk milk milk corrupt corrupt corrupt me me me mem me me me me stocktaking exercise that looks at internal capacities; stakeholder needs versus organizational responsiveness and the contextual realities in which your organisation operate. The information it captures should provide insights on the gaps what the organisation current performance and what it is intending to achieve.";
-        return view('swots/strengths/create')->with('description',$someData);
+         $userID =  auth()->user()->id;
+        $results = DB::select( DB::raw("SELECT a.*,b.name FROM swots a inner join users b on a.userID = b.id where a.userID = '$userID'") );
+
+        $description =" ";
+       foreach($results as $result){
+        $description .=$result->body." ";
+        }
+
+        return view('swots/strengths/create')->with(compact('description', 'results'));
     }
     public  function swotsWeaknesses(){
         $someData =  "It is a milk milk milk corrupt corrupt corrupt me me me mem me me me me stocktaking exercise that looks at internal capacities; stakeholder needs versus organizational responsiveness and the contextual realities in which your organisation operate. The information it captures should provide insights on the gaps what the organisation current performance and what it is intending to achieve.";
-        return view('swots/weaknesses/create')->with('description',$someData);
+        return view('swots/weaknesses/create')->with(compact('someData'));
     }
     public  function swotsOpportunities(){
         return view('swots/opportunities/create');

@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap5.min.css">
-   
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
-    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap5.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href=" https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+ 
+
 
 </head>
 <body>
@@ -84,18 +83,88 @@
         </main>
     </div>
 
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js" ></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap5.min.js"></script>
+   
+   
+   <script type="text/javascript">
+    $(document).ready(function(){
+        $('.editbtn').on('click',function(){
+            $('#editSwotModal').modal('show');
+            $tr = $(this).closest('tr');
+            var data = $tr.children("td").map(function(){
+                return $(this).text();
+            }).get();
+
+            console.log(data);
+            $('#id').val(data[0]);
+            $('#swotType').val(data[2]);
+            $('#status').val(data[1]);
+            $('#issueDescription').val(data[7]);
+
+        });
+        $('#editForm').on('submit',function(e){
+        e.preventDefault();
+        var  id  = $('#id').val();
+
+        $.ajax({
+            type:"PUT",
+            url:"/swotupdate/"+id,
+            data:$('#editForm').serialize(),
+            success:function(response){
+                console.log(response)
+                $('#editSwotModal').modal('hide')
+                alert("Data Updated");
+                location.reload();
+            },
+            error:function(error){
+                console.log(error)
+                alert("Data Not Updated");
+            }
+        });
+    });
 
 
-    <script type="text/javascript">
-
-   $(document).ready(function() {
-    $('#example').DataTable();
-} );
-    
+    });
     </script>
     
- 
-  
+ <!-- Add data  Script begin -->
+ <script type="text/javascript">
+$(document).ready(function(){
+    $('#addForm').on('submit',function(e){
+        e.preventDefault();
+
+        $.ajax({
+            type:"POST",
+            url:"/swotadd",
+            data:$('#addForm').serialize(),
+            success:function(response){
+                console.log(response)
+                $('#addSwotModal').modal('hide')
+                alert("Data Saved");
+                location.reload();
+            },
+            error:function(error){
+                console.log(error)
+                alert("Data Not Saved");
+            }
+        });
+    });
+});
+     
+     </script>
+ <!-- Add  data script end  -->
+  <script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+  </script>
 
 </body>
 </html>
