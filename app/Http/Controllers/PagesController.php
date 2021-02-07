@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 class PagesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['welcome']);
+    }
     public  function about(){
         return view('pages.about');
     }
