@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SwotsController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\CompaniesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +26,7 @@ Route::resource('communications',SwotsController::class);
 Route::resource('frameworks',SwotsController::class);
 Route::resource('risks',SwotsController::class);
 Route::resource('visions',SwotsController::class);
-Route::resource('pestels',PestelsController::class);
+
 Route::get('landings/risk', [PagesController::class, 'landingsRisk']);
 Route::get('landings/organisation', [PagesController::class, 'landingsOrganisation']);
 Route::get('landings/vision', [PagesController::class, 'landingsVision']);
@@ -67,7 +68,7 @@ Route::put('/swotupdate/{id}',[SwotsController::class,'update']);
 
 
 
-
+Route::get('/companies', [CompaniesController::class, 'getCompanies']);
 
 Auth::routes();
 
