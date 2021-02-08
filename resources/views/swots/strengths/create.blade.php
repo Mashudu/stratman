@@ -100,9 +100,9 @@
           <select name="status" id="status" class="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
             <option value="NEW">New</option>
-            <option value="REJECTED">Rejected</option>
-            <option value="ACCEPTED">Accepted</option>
-            <option value="OTHER">OTHER</option>
+            <option value="REJECTED">Under Review</option>
+            <option value="ACCEPTED">Published</option>
+            <option value="OTHER">Discaded</option>
           </select>
         </div>
       </div>
@@ -150,9 +150,7 @@
         <td>{{ $swot->name }}</td>
         <td>{{ $swot->updated_at }}</td>
         <td>
-          <button type="button" class="btn btn-success btn-sm showbtn">View</button>|
-          <button type="button" class="btn btn-warning btn-sm editbtn">Edit</button>|
-          <button type="button" class="btn btn-danger btn-sm  deletebtn">Delete</button>
+          <button type="button" class="btn btn-primary btn-sm editbtn">Analyse</button>
         </td>
         <td style="display:none;">   {{ $swot->body }}</td>
       </tr>    
