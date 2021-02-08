@@ -101,12 +101,31 @@
 
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js" ></script>
     <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap5.min.js"></script>
-   <script>
-       $('#logout-button').on('click', function(e) {
-    e.preventDefault();
-    $('#logout-form').submit();
-});
-   </script>
+ 
+    <script>
+        $('#logout-button').on('click', function(e) {
+     e.preventDefault();
+     $('#logout-form').submit();
+ });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $.getJSON("/companies", function(result){                
+             console.log(result.data);
+            for (let index = 0; index < result.data.length; index++) {
+                $('#company').append('<option value="' + result.data[index].id + '">' + result.data[index].name + '</option>');
+                 
+                
+            }
+                
+            
+             
+    
+  });
+    
+          
+        });
+    </script>
    
    <script type="text/javascript">
     $(document).ready(function(){
@@ -183,6 +202,8 @@ $(document).ready(function() {
 } );
 
   </script>
+
+
 
 </body>
 </html>
