@@ -5,11 +5,15 @@
 <br>
 <div class="p-4 p-md-5 mb-5 text-white rounded bg-dark">
   <div class="col-md-10 px-0">
-    <h2 class="display-5 font-italic">Political</h2>
-    <p class="lead my-4">Prepare two to three succinct paragraphs on how the your organisation will effectively communicate the various aspects of the strategic plan including vision, mission, core values, organisational goal, objectives, expected outcomes and strategies to key audiences and the messages and communications channels that will be used.</p>
-    <a class="btn btn-primary btn-lg" href="register">Learn more</a>
+    <h2 class="display-5 font-italic">SWOT Analysis</h2>
+    <p class="lead my-4">This is the assessment and analysis of your organisation's Strengths, Weakness, Opportunities and Threats.The information captured should provide insights on the gaps what the organisation’s current performance and what it is intending to achieve.  Note that the information is for helping to match the organisation’s goals, programmes and capacities to the social and economic environment in which it operates.</p>
+    <a class="btn btn-primary btn-primary" href="register">Learn more</a>
   </div>
 </div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+ + Cloud Generator
+</button>
 
 <!-- Cloud Start -->
 
