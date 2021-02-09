@@ -69,7 +69,6 @@ Route::put('/swotupdate/{id}',[SwotsController::class,'update']);
 
 
 Route::get('/companies', [CompaniesController::class, 'getCompanies']);
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
