@@ -5,11 +5,15 @@
 <br>
 <div class="p-4 p-md-5 mb-5 text-white rounded bg-dark">
   <div class="col-md-10 px-0">
-    <h2 class="display-5 font-italic">Political</h2>
-    <p class="lead my-4">Prepare two to three succinct paragraphs on how the your organisation will effectively communicate the various aspects of the strategic plan including vision, mission, core values, organisational goal, objectives, expected outcomes and strategies to key audiences and the messages and communications channels that will be used.</p>
-    <a class="btn btn-primary btn-lg" href="register">Learn more</a>
+    <h2 class="display-5 font-italic">SWOT Analysis</h2>
+    <p class="lead my-4">This is the assessment and analysis of your organisation's Strengths, Weakness, Opportunities and Threats.The information captured should provide insights on the gaps what the organisation’s current performance and what it is intending to achieve.  Note that the information is for helping to match the organisation’s goals, programmes and capacities to the social and economic environment in which it operates.</p>
+    <a class="btn btn-primary btn-primary" href="register">Learn more</a>
   </div>
 </div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+ + Cloud Generator
+</button>
 
 <!-- Cloud Start -->
 
@@ -96,9 +100,9 @@
           <select name="status" id="status" class="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
             <option value="NEW">New</option>
-            <option value="REJECTED">Rejected</option>
-            <option value="ACCEPTED">Accepted</option>
-            <option value="OTHER">OTHER</option>
+            <option value="REJECTED">Under Review</option>
+            <option value="ACCEPTED">Published</option>
+            <option value="OTHER">Discaded</option>
           </select>
         </div>
       </div>
@@ -146,9 +150,7 @@
         <td>{{ $swot->name }}</td>
         <td>{{ $swot->updated_at }}</td>
         <td>
-          <button type="button" class="btn btn-success btn-sm showbtn">View</button>|
-          <button type="button" class="btn btn-warning btn-sm editbtn">Edit</button>|
-          <button type="button" class="btn btn-danger btn-sm  deletebtn">Delete</button>
+          <button type="button" class="btn btn-primary btn-sm editbtn">Analyse</button>
         </td>
         <td style="display:none;">   {{ $swot->body }}</td>
       </tr>    
