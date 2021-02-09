@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class CompaniesController extends Controller
+class PestelsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,15 @@ class CompaniesController extends Controller
      */
     public function index()
     {
-        //
+        $userID =  auth()->user()->id;
+        $results = DB::select( DB::raw("SELECT a.*,b.name,c.name as businessUnitName FROM pestels a inner join users b on a.userID = b.id left outer join businessunits c  on c.id=a.businessUnitID where a.userID = '$userID'") );
+
+        $description =" ";
+        foreach($results as $result){
+        $description .=$result->body." ";
+        }
+
+        return view('pestels.index')->with(compact('description', 'results'));
     }
 
     /**
@@ -82,22 +90,4 @@ class CompaniesController extends Controller
     {
         //
     }
-    public function getCompanies()
-    {
-        
-        $data = DB::table('companies')->get();
-      
-        return response()->json(['data' => $data]);
-    }
-
-    public function getDepartments()
-    { $userID =  auth()->user()->id;
-        $data = DB::select( DB::raw("SELECT a.* FROM businessunits a inner  join  companies b  on  a.companyID =  b.id inner join  users c  on  c.companyID = b.id where c.id = '$userID'") );
-        
-        
-      
-        return response()->json(['data' => $data]);
-    }
-
-    
 }

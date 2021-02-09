@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Swot;
+use Illuminate\Support\Facades\DB;
 
 class SwotsController extends Controller
 {
@@ -14,7 +15,15 @@ class SwotsController extends Controller
      */
     public function index()
     {
-        return view('swots.index');
+        $userID =  auth()->user()->id;
+        $results = DB::select( DB::raw("SELECT a.*,b.name,c.name as businessUnitName FROM swots a inner join users b on a.userID = b.id left outer join businessunits c  on c.id=a.businessUnitID where a.userID = '$userID'") );
+
+        $description =" ";
+        foreach($results as $result){
+        $description .=$result->body." ";
+        }
+
+        return view('swots.index')->with(compact('description', 'results'));
     }
 
     /**
@@ -43,6 +52,10 @@ class SwotsController extends Controller
       $swot->type =  $request->input('swotType'); 
       $swot->userID =  auth()->user()->id;
       $swot->body =  $request->input('swotDescription');     
+
+     
+ 
+      $swot->businessUnitID = 0;  
       $swot->save();  
       
     
@@ -85,6 +98,8 @@ class SwotsController extends Controller
         $swot->userID =  auth()->user()->id;
         $swot->body =  $request->input('swotDescription');    
         $swot->status =  $request->input('status');   
+        $swot->businessUnitID =  $request->input('dept');  
+         
         $swot->save();  
     }
 

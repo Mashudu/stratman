@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SwotsController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\CompaniesController;
+use App\Http\Controllers\PestelsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,8 @@ Route::resource('communications',SwotsController::class);
 Route::resource('frameworks',SwotsController::class);
 Route::resource('risks',SwotsController::class);
 Route::resource('visions',SwotsController::class);
+Route::get('/swot-analysis', [SwotsController::class, 'index']);
+Route::get('/pestel-analysis', [PestelsController::class, 'index']);
 
 Route::get('landings/risk', [PagesController::class, 'landingsRisk']);
 Route::get('landings/organisation', [PagesController::class, 'landingsOrganisation']);
@@ -69,6 +72,8 @@ Route::put('/swotupdate/{id}',[SwotsController::class,'update']);
 
 
 Route::get('/companies', [CompaniesController::class, 'getCompanies']);
+Route::get('/departments', [CompaniesController::class, 'getDepartments']);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

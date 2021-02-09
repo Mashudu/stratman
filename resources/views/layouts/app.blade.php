@@ -108,26 +108,37 @@
      $('#logout-form').submit();
  });
     </script>
+ <script>
+  $('.modalbtn').on('click', function(e) {
+e.preventDefault();
+$('#modal1').modal('show');
+});
+</script>
+
     <script>
         $(document).ready(function () {
             $.getJSON("/companies", function(result){                
              console.log(result.data);
             for (let index = 0; index < result.data.length; index++) {
-                $('#company').append('<option value="' + result.data[index].id + '">' + result.data[index].name + '</option>');
-                 
+                $('#company').append('<option value="' + result.data[index].id + '">' + result.data[index].name + '</option>'); 
                 
-            }
-                
-            
-             
-    
-  });
-    
-          
-        });
+            } });
+            });
     </script>
     
-   
+
+ 
+  <script>
+      $(document).ready(function () {
+          $.getJSON("/departments", function(result){                
+           console.log(result.data);
+          for (let index = 0; index < result.data.length; index++) {
+              $('#dept').append('<option value="' + result.data[index].id + '">' + result.data[index].name + '</option>');  
+              }
+          });
+          });
+  </script>
+  
    <script type="text/javascript">
     $(document).ready(function(){
         $('.editbtn').on('click',function(){

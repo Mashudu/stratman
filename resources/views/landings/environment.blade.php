@@ -20,7 +20,7 @@
       <ul class="list-unstyled mt-3 mb-4">
         <li>Identify the tangible and intangible attributes that are internal to your organisation for which you have control.  </li>
       </ul>
-      <a href="{{url('/swots/strengths/create')}}" class="w-100 btn btn-lg btn-outline-info">Get Started</a>
+      <a href="{{url('/swot-analysis')}}" class="w-100 btn btn-lg btn-outline-info">Get Started</a>
     </div>
   </div>
   </div>
@@ -34,7 +34,7 @@
       <ul class="list-unstyled mt-3 mb-4">
         <li>These are factors within your organisation control, which hinder your organisation from meeting its goals.</li>
       </ul>
-      <a href="{{url('/landings/pestel')}}" class="w-100 btn btn-lg btn-outline-primary">Get started</a>
+      <a href="{{url('/pestel-analysis')}}" class="w-100 btn btn-lg btn-outline-primary">Get started</a>
     </div>
   </div>
   </div>

@@ -14,7 +14,15 @@ class PagesController extends Controller
         return view('pages.about');
     }
     public  function swots(){
-        return view('swots');
+        $userID =  auth()->user()->id;
+        $results = DB::select( DB::raw("SELECT a.*,b.name,c.name as businessUnitName FROM swots a inner join users b on a.userID = b.id left outer join businessunits c  on c.id=a.businessUnitID where a.userID = '$userID'") );
+
+        $description =" ";
+       foreach($results as $result){
+        $description .=$result->body." ";
+        }
+
+        return view('swots.index')->with(compact('description', 'results'));
     }
     public  function action(){
         return view('action');
@@ -90,7 +98,7 @@ class PagesController extends Controller
     }
     public  function swotsStrengths(){
          $userID =  auth()->user()->id;
-        $results = DB::select( DB::raw("SELECT a.*,b.name FROM swots a inner join users b on a.userID = b.id where a.userID = '$userID'") );
+        $results = DB::select( DB::raw("SELECT a.*,b.name,c.name as businessUnitName FROM swots a inner join users b on a.userID = b.id left outer join businessunits c  on c.id=a.businessUnitID where a.userID = '$userID'") );
 
         $description =" ";
        foreach($results as $result){
