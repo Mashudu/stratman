@@ -25,12 +25,12 @@
   <!-- Cloud End -->
   <!-- Insert Modal  Modal Begin   -->
   <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addSwotModal">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPestelModal">
   + Add New Issue
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="addPestelMOdal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addPestelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -41,12 +41,14 @@
         {{ csrf_field() }}
       <div class="modal-body">
         <div class="mb-3">
-          <select name="pestelType" class="form-select" aria-label="Default select example">
+          <select name="issueType" class="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
-            <option value="Strength">Strength</option>
-            <option value="Weakness">Weakness</option>
-            <option value="Opportunity">Opportunity</option>
-            <option value="Threat">Threat</option>
+            <option value="political">Political</option>
+            <option value="economical">Economical</option>
+            <option value="social">Social</option>
+            <option value="technology">Technology</option>
+            <option value="environment">Environment</option>
+            <option value="legal">Legal</option>
           </select>
         </div>
         <div class="mb-3">
@@ -71,7 +73,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">SWOT Edit Data</h5>
+        <h5 class="modal-title" id="exampleModalLabel">PESTEL Edit Data</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <form id="editPestelForm" >
@@ -84,12 +86,14 @@
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Issue Type</label>
-          <select name="pestelType" id="pestelType" class="form-select" aria-label="Default select example">
+          <select name="issueType" id="issueType" class="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
-            <option value="Strength">Strength</option>
-            <option value="Weakness">Weakness</option>
-            <option value="Opportunity">Opportunity</option>
-            <option value="Threat">Threat</option>
+            <option value="political">Political</option>
+            <option value="economical">Economical</option>
+            <option value="social">Social</option>
+            <option value="technology">Technology</option>
+            <option value="environment">Environment</option>
+            <option value="legal">Legal</option>
           </select>
         </div>
         <div class="mb-3">

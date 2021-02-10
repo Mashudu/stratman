@@ -68,6 +68,8 @@ Route::get('/stakeholders/potential/create', [PagesController::class, 'potential
 
 Route::post('/swotadd',[SwotsController::class,'store']);
 Route::put('/swotupdate/{id}',[SwotsController::class,'update']);
+Route::post('/pesteladd',[PestelsController::class,'store']);
+Route::put('/pestelupdate/{id}',[PestelsController::class,'update']);
 
 
 

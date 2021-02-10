@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Pestel;
 
 class PestelsController extends Controller
 {
@@ -43,7 +44,14 @@ class PestelsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $issue = new Pestel;     
+        $issue->type =  $request->input('issueType'); 
+        $issue->userID =  auth()->user()->id;
+        $issue->body =  $request->input('issueDescription');     
+  
+        $issue->businessUnitID = 0;  
+        $issue->save();  
+        
     }
 
     /**
@@ -77,7 +85,14 @@ class PestelsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $issue = Pestel::find($id);     
+        $issue->type =  $request->input('issueType'); 
+        $issue->userID =  auth()->user()->id;
+        $issue->body =  $request->input('issueDescription');    
+        $issue->status =  $request->input('status');   
+        $issue->businessUnitID =  $request->input('dept');  
+         
+        $issue->save();  
     }
 
     /**

@@ -179,7 +179,47 @@ $('#modal1').modal('show');
 
     });
     </script>
-    
+     <script type="text/javascript">
+      $(document).ready(function(){
+          $('.editbtn').on('click',function(){
+              $('#editPestelModal').modal('show');
+              $tr = $(this).closest('tr');
+              var data = $tr.children("td").map(function(){
+                  return $(this).text();
+              }).get();
+  
+              console.log(data);
+              $('#id').val(data[0]);
+              $('#issueType').val(data[2]);
+              $('#status').val(data[1]);
+              $('#issueDescription').val(data[7]);
+  
+          });
+          $('#editPestelForm').on('submit',function(e){
+          e.preventDefault();
+          var  id  = $('#id').val();
+  
+          $.ajax({
+              type:"PUT",
+              url:"/pestelupdate/"+id,
+              data:$('#editPestelForm').serialize(),
+              success:function(response){
+                  console.log(response)
+                  $('#editPestelModal').modal('hide')
+                  alert("Data Updated");
+                  location.reload();
+              },
+              error:function(error){
+                  console.log(error)
+                  alert("Data Not Updated");
+              }
+          });
+      });
+  
+  
+      });
+      </script>
+      
  <!-- Add data  Script begin -->
  <script type="text/javascript">
 $(document).ready(function(){
@@ -205,6 +245,31 @@ $(document).ready(function(){
 });
      
      </script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('#addPestelForm').on('submit',function(e){
+          e.preventDefault();
+  
+          $.ajax({
+              type:"POST",
+              url:"/pesteladd",
+              data:$('#addPestelForm').serialize(),
+              success:function(response){
+                  console.log(response)
+                  $('#addPestelModal').modal('hide')
+                  alert("Data Saved");
+                  location.reload();
+              },
+              error:function(error){
+                  console.log(error)
+                  alert("Data Not Saved");
+              }
+          });
+      });
+  });
+       
+       </script>
  <!-- Add  data script end  -->
   <script>
 $(document).ready(function() {
