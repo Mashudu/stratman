@@ -270,6 +270,61 @@ $(document).ready(function(){
   });
        
        </script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('#addStakeholderForm').on('submit',function(e){
+          e.preventDefault();
+  
+          $.ajax({
+              type:"POST",
+              url:"/stakeholderadd",
+              data:$('#addStakeholderForm').serialize(),
+              success:function(response){
+                  console.log(response)
+                  $('#addStakeholderModal').modal('hide')
+                  alert("Data Saved");
+                  location.reload();
+              },
+              error:function(error){
+                  console.log(error)
+                  alert("Data Not Saved");
+              }
+          });
+      });
+  });
+       
+       </script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('#addFrameworkForm').on('submit',function(e){
+          e.preventDefault();
+  
+          $.ajax({
+              type:"POST",
+              url:"/frameworkadd",
+              data:$('#addFrameworkForm').serialize(),
+              success:function(response){
+                  console.log(response)
+                  $('#addFrameworkModal').modal('hide')
+                  alert("Data Saved");
+                  location.reload();
+              },
+              error:function(error){
+                  console.log(error)
+                  alert("Data Not Saved");
+              }
+          });
+      });
+  });
+       
+       </script>
+
+       
+
+
+
  <!-- Add  data script end  -->
   <script>
 $(document).ready(function() {

@@ -5,6 +5,7 @@ use App\Http\Controllers\SwotsController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\CompaniesController;
 use App\Http\Controllers\PestelsController;
+use App\Http\Controllers\StakeholdersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,8 @@ Route::resource('risks',SwotsController::class);
 Route::resource('visions',SwotsController::class);
 Route::get('/swot-analysis', [SwotsController::class, 'index']);
 Route::get('/pestel-analysis', [PestelsController::class, 'index']);
+Route::get('/stakeholders', [StakeholdersController::class, 'index']);
+Route::get('/frameworks', [FrameworksController::class, 'index']);
 
 Route::get('landings/risk', [PagesController::class, 'landingsRisk']);
 Route::get('landings/organisation', [PagesController::class, 'landingsOrganisation']);
@@ -70,6 +73,10 @@ Route::post('/swotadd',[SwotsController::class,'store']);
 Route::put('/swotupdate/{id}',[SwotsController::class,'update']);
 Route::post('/pesteladd',[PestelsController::class,'store']);
 Route::put('/pestelupdate/{id}',[PestelsController::class,'update']);
+Route::post('/stakeholderadd',[StakeholdersController::class,'store']);
+Route::put('/stakeholderupdate/{id}',[StakeholdersController::class,'update']);
+Route::post('/frameworkadd',[FrameworksController::class,'store']);
+Route::put('/frameworkupdate/{id}',[FrameworksController::class,'update']);
 
 
 

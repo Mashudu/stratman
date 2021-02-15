@@ -57,6 +57,7 @@
         <ul class="list-unstyled mt-3 mb-4">
           <li><a href="{{url('pestels')}}" >Organisation Vision</a></li>
           <li><a href="{{url('pestels')}}" >Mission</a></li>
+          <li><a href="{{url('pestels')}}" >Business Model</a></li>
           <li><a href="{{url('pestels')}}" >Core Values</a></li>
         </ul>
         <a href="{{url('/landings/vision')}}" class="w-100 btn btn-lg btn-outline-primary">Get started</a>
@@ -75,7 +76,7 @@
         <ul class="list-unstyled mt-3 mb-4 ">
           <li><a href="{{url('swots')}}" >SWOT Analysis</a></li>
           <li><a href="{{url('/landings/pestel')}}" >PESTEL Analysis</a></li>
-          <li><a href="{{url('/landings/stakeholder')}}" >Stakeholder Analysis</a></li>
+          <li><a href="{{url('/stakeholders')}}" >Stakeholder Analysis</a></li>
         </ul>
         <a href="{{url('/landings/environment')}}" class="w-100 btn btn-lg btn-outline-success">Get started</a>
       </div>
@@ -94,7 +95,7 @@
             <li><a href="{{url('pestels')}}" >Strategic Objectives</a></li>
             <li><a href="{{url('pestels')}}" >Strategies</a></li>
           </ul>
-          <a href="{{url('/landings/framework')}}" class="w-100 btn btn-lg btn-outline-success">Get started</a>
+          <a href="{{url('/frameworks')}}" class="w-100 btn btn-lg btn-outline-success">Get started</a>
         </div>
       </div>
       </div>

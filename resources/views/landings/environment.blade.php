@@ -48,7 +48,21 @@
       <ul class="list-unstyled mt-4 mb-4 ">
         <li>These are the attractive factors that if they are capitalized up will help to close the gap between goals and expectations. </li>
       </ul>
-      <a href="{{url('/landings/stakeholder')}}" class="w-100 btn btn-lg btn-outline-danger">Get started</a>
+      <a href="{{url('/stakeholders')}}" class="w-100 btn btn-lg btn-outline-danger">Get started</a>
+    </div>
+  </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger mb-4 text-danger">
+    <div class="card-header">
+      <h4 class="my-0 fw-normal">STAKEHOLDER</h4>
+    </div>
+    <div class="card-body ">
+     
+      <ul class="list-unstyled mt-4 mb-4 ">
+        <li>These are the attractive factors that if they are capitalized up will help to close the gap between goals and expectations. </li>
+      </ul>
+      <a href="{{url('/stakeholder-analysis')}}" class="w-100 btn btn-lg btn-outline-danger">Get started</a>
     </div>
   </div>
   </div>
